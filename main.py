@@ -3,7 +3,7 @@ import cv2
 from ultralytics import YOLO
 import pandas as pd
 
-model = YOLO("best.pt")
+model = YOLO("nano.pt")
 
 def get_od(img):
     x = model.predict(source=img, show=False)
